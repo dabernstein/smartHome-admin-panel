@@ -1,4 +1,9 @@
-<app-sidebar></app-sidebar>
-<div class="p-4 sm:ml-64">
-  <h1 class="text-3xl font-bold">Dashboard</h1>
-</div>
+<!-- <app-sidebar></app-sidebar> -->
+<mat-drawer-container>
+  <mat-drawer mode="side" opened>
+    <app-sidebar></app-sidebar>
+  </mat-drawer>
+  <mat-drawer-content class="px-5 py-4" style="height: 100vh;">
+    <app-dashboard></app-dashboard>
+  </mat-drawer-content>
+</mat-drawer-container>
